@@ -14,3 +14,7 @@ async def home():
 @router.get("/ping")
 async def ping():
     return APPS_INFORMATION["version"]
+
+@router.get("/test")
+async def test():
+    return "Berhasil"
